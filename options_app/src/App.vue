@@ -62,7 +62,6 @@ export default {
           showClose: false
         });
       }).catch((error) => {
-        console.log(error.response)
         if(error.response.status === 400){
           this.error = error.response.data.errors;
         }
@@ -83,7 +82,6 @@ export default {
     this.config = this.optionsConfig;
     this.$root.$on("change", (data) => {
       this.form[data.name] = data.value;
-      console.log(this.form);
     });
 
     // fix bitrix styles
