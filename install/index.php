@@ -26,6 +26,7 @@ class bx_options extends CModule
     public function DoInstall(): bool
     {
         ModuleManager::RegisterModule($this->MODULE_ID);
+        $this->InstallFiles();
         return true;
     }
 
@@ -35,6 +36,7 @@ class bx_options extends CModule
     public function DoUninstall(): bool
     {
         ModuleManager::UnRegisterModule($this->MODULE_ID);
+        $this->UnInstallFiles();
         return true;
     }
 
@@ -51,9 +53,6 @@ class bx_options extends CModule
     public function InstallEvents()
     {
 
-//        CAgent::Add([
-//
-//        ]);
         return true;
     }
 
@@ -64,11 +63,19 @@ class bx_options extends CModule
 
     public function InstallFiles()
     {
-        return true;
+        CopyDirFiles(
+          __DIR__ . '/components/',
+          $_SERVER["DOCUMENT_ROOT"].'/bitrix/components/',
+          true,
+          true
+        );
     }
 
     public function UnInstallFiles()
     {
-        return true;
+        DeleteDirFiles(
+          __DIR__ . '/components/',
+          $_SERVER["DOCUMENT_ROOT"].'/bitrix/components/'
+        );
     }
 }
