@@ -65,7 +65,7 @@ class bx_options extends CModule
     {
         CopyDirFiles(
           __DIR__ . '/components/',
-          $_SERVER["DOCUMENT_ROOT"].'/bitrix/components/',
+          $_SERVER["DOCUMENT_ROOT"].'/local/components/',
           true,
           true
         );
@@ -75,7 +75,7 @@ class bx_options extends CModule
     {
         DeleteDirFiles(
           __DIR__ . '/components/',
-          $_SERVER["DOCUMENT_ROOT"].'/bitrix/components/'
+          $_SERVER["DOCUMENT_ROOT"].'/local/components/'
         );
     }
 }

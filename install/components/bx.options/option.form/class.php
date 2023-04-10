@@ -18,7 +18,7 @@ class OptionForm extends \CBitrixComponent
 
     public function __construct($component = null)
     {
-        $this->installComponentPath = $_SERVER['DOCUMENT_ROOT'].'/local/dev/bx.options/install/components/bx.options/option.form/';
+        $this->installComponentPath = $_SERVER['DOCUMENT_ROOT'].'/local/modules/bx.options/install/components/bx.options/option.form/';
         parent::__construct($component);
     }
 
