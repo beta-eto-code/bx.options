@@ -10,12 +10,13 @@ use Bx\Options\Form\ElementName;
 class SelectField extends BaseField
 {
 
-    public function __construct(string $name, string $label, array $options, $multiple = false)
+    public function __construct(string $name, string $label, array $options, $multiple = false, $collapseTags = false)
     {
         $this->name = $name;
         $this->label = $label;
         $this->setAttribute(Attribute::init("options", $options));
         $this->setAttribute(Attribute::init("multiple", $multiple));
+        $this->setAttribute(Attribute::init("collapseTags", $collapseTags));
     }
 
     /**
