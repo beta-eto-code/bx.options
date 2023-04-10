@@ -2,10 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-
-if (process.env.DEV_LOAD_BITRIX_STYLE === true) {
-    require('./assets/bitrix_admin.css');
-}
+import './assets/bitrix_admin.css';
 
 
 Vue.config.productionTip = false

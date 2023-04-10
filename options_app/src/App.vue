@@ -94,14 +94,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  margin-top: 60px;
-  max-width: 900px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    margin-top: 10px;
+    max-width: 100%;
 }
-
+.btn__save {
+    margin-top: 15px;
+}
 </style>
+

@@ -1,0 +1,21 @@
+#adm-workarea form select[name="mid"] {
+    margin: 0;
+    padding: 4px;
+    height: 27px;
+    border: 1px solid #a3a5a5;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.3), inset 0 2px 2px -1px rgba(180, 188, 191, 0.7);
+    color: #000;
+    vertical-align: middle;
+    font-size: 13px;
+    font-family: var(--ui-font-family-primary, var(--ui-font-family-helvetica));
+    -webkit-font-smoothing: antialiased;
+}
+
+.version {
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+    color: #45484f;
+}
