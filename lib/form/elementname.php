@@ -11,4 +11,6 @@ interface ElementName
     const UI_DIVIDER = "divider";
     const TABS = "tabs";
     const NOTICE = "notice";
+    const COLLAPSE = "collapse";
+    const COLLAPSES = "collapses";
 }
