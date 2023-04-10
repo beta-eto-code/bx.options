@@ -1,10 +1,11 @@
 <template>
-  <el-form-item :label="node.label">
+  <el-form-item :error="errorMessage" :label="node.label">
     <el-select
         v-model="value"
         filterable
         placeholder="Выбор"
         :multiple="node.properties.multiple"
+        :collapse-tags="node.properties.collapseTags"
     >
       <el-option
         v-for="(label, value) in node.properties.options"

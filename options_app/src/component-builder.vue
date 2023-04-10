@@ -13,10 +13,13 @@
 <script>
 import VueTabs from "@/components/tabs";
 import VueTab from "@/components/tab";
+import VueCollapses from "@/components/collapses.vue"
+import VueCollapse from "@/components/collapse.vue"
 import TextField  from "@/components/text-field";
 import SelectField from "@/components/selectField";
 import VueDivider from "@/components/divider";
 import VueNotice from "@/components/notice";
+import EditorField from "@/components/editorField.vue";
 export default {
   name: "component-builder",
   props: {
@@ -30,15 +33,18 @@ export default {
       registerComponent: {
         "tabs": VueTabs,
         "tab": VueTab,
+        "collapses": VueCollapses,
+        "collapse": VueCollapse,
         "text_field": TextField,
         "select_field": SelectField,
         "divider": VueDivider,
         "notice": VueNotice,
+        "editor_field": EditorField
       }
     }
   },
   components: {
-    VueTabs, VueTab, TextField, SelectField, VueDivider, VueNotice
+    VueTabs, VueTab, VueCollapses, VueCollapse, TextField, SelectField, VueDivider, VueNotice, EditorField
   },
   methods: {
     getComponentByType(type){
