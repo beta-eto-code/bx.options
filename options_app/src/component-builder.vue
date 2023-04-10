@@ -19,6 +19,7 @@ import TextField  from "@/components/text-field";
 import SelectField from "@/components/selectField";
 import VueDivider from "@/components/divider";
 import VueNotice from "@/components/notice";
+import EditorField from "@/components/editorField.vue";
 export default {
   name: "component-builder",
   props: {
@@ -38,11 +39,12 @@ export default {
         "select_field": SelectField,
         "divider": VueDivider,
         "notice": VueNotice,
+        "editor_field": EditorField
       }
     }
   },
   components: {
-    VueTabs, VueTab, VueCollapses, VueCollapse, TextField, SelectField, VueDivider, VueNotice
+    VueTabs, VueTab, VueCollapses, VueCollapse, TextField, SelectField, VueDivider, VueNotice, EditorField
   },
   methods: {
     getComponentByType(type){

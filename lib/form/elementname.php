@@ -8,6 +8,7 @@ interface ElementName
     const TAB = "tab";
     const TEXT_FIELD = "text_field";
     const SELECT_FIELD = "select_field";
+    const EDITOR_FIELD = "editor_field";
     const UI_DIVIDER = "divider";
     const TABS = "tabs";
     const NOTICE = "notice";
