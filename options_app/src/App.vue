@@ -56,6 +56,7 @@ export default {
       this.error = [];
       this.loading = true;
       axios.post(this.config.properties.action, this.form).then(() => {
+        console.log(this.form);
         this.$notify.success({
           title: 'Сохранено',
           message: 'Настройки успешно сохранены',

@@ -17,6 +17,7 @@ import VueCollapses from "@/components/collapses.vue"
 import VueCollapse from "@/components/collapse.vue"
 import TextField  from "@/components/text-field";
 import SelectField from "@/components/selectField";
+import CascaderField from "@/components/cascaderField";
 import VueDivider from "@/components/divider";
 import VueNotice from "@/components/notice";
 import EditorField from "@/components/editorField.vue";
@@ -39,12 +40,13 @@ export default {
         "select_field": SelectField,
         "divider": VueDivider,
         "notice": VueNotice,
-        "editor_field": EditorField
+        "editor_field": EditorField,
+        "cascader_field": CascaderField
       }
     }
   },
   components: {
-    VueTabs, VueTab, VueCollapses, VueCollapse, TextField, SelectField, VueDivider, VueNotice, EditorField
+    VueTabs, VueTab, VueCollapses, VueCollapse, TextField, SelectField, VueDivider, VueNotice, EditorField, CascaderField
   },
   methods: {
     getComponentByType(type){

@@ -16,8 +16,4 @@ export default {
 </script>
 
 <style scoped>
-.form-notice {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
 </style>
